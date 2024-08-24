@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Search Highlight",
+  "version": "1.0",
+  "description": "Create a popup to search Google when text is highlighted ",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["apikeys.js", "content.js"]
+    }
+  ]
+}
